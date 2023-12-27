@@ -24,7 +24,7 @@ data_load_state.text("Done! (using st.cache_data)")
 
 if st.checkbox('Show raw data'):
     st.subheader('Raw data')
-    st.write(data)
+    # st.write(data) # -- use st.dataframe instead - looks better
     st.dataframe(data, use_container_width=True)
 
 st.subheader('Number of pickups by hour')
