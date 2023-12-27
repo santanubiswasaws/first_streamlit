@@ -22,8 +22,8 @@ data = load_data(10000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text("Done! (using st.cache_data)")
 
-if st.checkbox('Show raw data'):
-    st.subheader('Data table')
+if st.checkbox('Show raw data frame'):
+    st.subheader('Data frame')
     # st.write(data) # -- use st.dataframe instead - looks better
     st.dataframe(data, use_container_width=True)
 
